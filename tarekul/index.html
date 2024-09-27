@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        body {
+            font-style: italic ;
+            background-color: #16f179f3;
+            
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .login-container {
+            background-color: rgb(33, 124, 124);
+            padding: 90px;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(20, 77, 59, 0.1);
+            width: 300px;
+        }
+        .login-container h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: white;
+            
+        }
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+        }
+        .login-container input[type="submit"] {
+            width: 60%;
+            padding: 10px;
+            background-color: #15f048;
+            border: none;
+            border-radius: 5px;
+            color: rgb(82, 9, 177);
+            font-size: 17px;
+            cursor: pointer;
+           
+            
+        }
+        .social{
+            text-align: center;
+            margin-top: 40px;
+            color: white;
+            
+        }
+        .social i{
+            margin: 0px 10px;
+        }
+        .btn{
+            text-align: center;
+        }
+        p{
+            color: white;
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        
+    </style>
+</head>
+<body>
+
+<div class="login-container">
+    <h1>Login</h1>
+    <form action="/login" method="POST">
+        <input type="text" name="username" placeholder="Username" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <div class="btn"><input  type="submit" value="submit"></div>
+    </form>
+    <p>Or, sign up with</p>
+    <div class="social">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-google"></i>
+        
+    </div>
+
+</div>
+
+</body>
+</html>
